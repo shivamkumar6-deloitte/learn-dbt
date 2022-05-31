@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+
+  - name: reputation
+    description: "10 users with reputation"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+          
+  - name: alexandrul
+    description: "posts with alexandrul"
+
+          
+  - name: mostbadges
+    description: "10 people with most number of badges"
+    columns:
+      - name: name
+        tests:
+          - not_null
+  - name: questionslike
+    description: "questions like nau"
+    
+  - name: QUESTIONCOUNT
+  
+

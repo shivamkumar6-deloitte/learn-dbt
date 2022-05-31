@@ -1,0 +1,1 @@
+select Name, count(*) as total from analytics.dbt.badges group by Name order by total desc limit 10
