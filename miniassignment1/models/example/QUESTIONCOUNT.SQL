@@ -1,6 +1,11 @@
-CREATE VIEW XYZ AS SELECT U.ID , P.BODY
-FROM POST P , USER U, WHERE P.OWNERUSERID = U.ID AND P.POSTTYPEID=1 AND U.REPUTATION >=75000
+--CREATE VIEW XYZ AS SELECT U.ID , P.BODY
+--FROM POST P , USER U, WHERE P.OWNERUSERID = U.ID AND P.POSTTYPEID=1 AND U.REPUTATION >=75000
+--SELECT X.ID, COUNT(*) AS no_QUESTIONS
+--FROM XYZ X GROUP BY X.ID
 
-
-SELECT X.ID, COUNT(*) AS no_QUESTIONS
-FROM XYZ X GROUP BY X.ID
+--select u.Id, u.DisplayName, u.Reputation, count(p.postypeId=1) as QuestionsAsked
+--from users u inner join Post p on u.id = p.OwnerUserId and p.posttypeId = 1
+--where u.reputation > 75000
+--group by u.Id, u.DisplayName, u.Reputation
+--order by QuestionsAsked desc
+--limit 10
